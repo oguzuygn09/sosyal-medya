@@ -51,11 +51,16 @@
    {
     "day": "Cmt 28 Kas",
     "time": "12:00",
-    "kind": "single",
+    "kind": "carousel",
     "imgs": [
-     "N4-Neopolis-Kars.jpg"
+     "N6a-Neopolis-Express-cover.jpg",
+     "N6b-Neopolis-Express-route.jpg",
+     "N6c-Neopolis-Express-onboard.jpg",
+     "N6d-Neopolis-Express-morning.jpg",
+     "N6e-Neopolis-Express-kars.jpg",
+     "N6f-Neopolis-Express-ani.jpg"
     ],
-    "cap": "The Eastern Express.\n\nA slow train from Ankara across snowy Anatolia, all the way to Kars and the ruins of Ani. One of the most beautiful winter journeys in Turkey.",
+    "cap": "The Eastern Express.\n\nA slow train from Ankara to Kars, about a day on the rails through Kayseri, Sivas, Erzincan and Erzurum. Sleeper cabins, endless tea and snowy Anatolia sliding past the window. At the end: the stone streets of Kars and the ruins of Ani.\n\nWould you take this train? Save it for your winter list.",
     "tags": "#EasternExpress #DoguExpress #Kars #Ani #TurkeyTravel"
    },
    {
