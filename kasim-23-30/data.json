@@ -112,13 +112,14 @@
     "time": "13:00",
     "kind": "carousel",
     "imgs": [
-     "V1a-Viajes-Estambul-cover.jpg",
-     "V1b-Ayasofya.jpg",
-     "V1c-Bazar.jpg",
-     "V1d-Bosforo.jpg"
+     "V1a-Viajes-Barrios-cover.jpg",
+     "V1b-Balat.jpg",
+     "V1c-Kuzguncuk.jpg",
+     "V1d-Cukurcuma.jpg",
+     "V1e-Moda.jpg"
     ],
-    "cap": "Estambul en tres días.\n\nSanta Sofía, mejor por la mañana antes de los grupos. El Bazar de las Especias, entre semana y con calma. Y el Bósforo en vapor al atardecer, como los locales.\n\nGuárdalo para tu viaje.",
-    "tags": "#Estambul #Turquia #SantaSofia #Bosforo #ViajarATurquia"
+    "cap": "Estambul que pocos conocen.\n\nFener y Balat, con sus casas de colores junto al Cuerno de Oro. Kuzguncuk, casas de madera y calma en el lado asiático. Cukurcuma y sus tiendas de antigüedades. Y Moda, para pasear junto al mar.\n\n¿Cuál visitarías primero? Guárdalo para tu viaje.",
+    "tags": "#Estambul #Balat #Kuzguncuk #EstambulSecreto #ViajarATurquia"
    },
    {
     "day": "Sal 24 Kas",
@@ -181,7 +182,7 @@
    {
     "day": "Pzt 23, post çıkınca",
     "img": "story/Viajes-Story-3-Nuevo-post.jpg",
-    "note": "Estambul postunu story olarak paylaş ya da bu görseli at"
+    "note": "Barrios postunu story olarak paylaş ya da bu görseli at"
    },
    {
     "day": "Çar 25",
