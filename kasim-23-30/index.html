@@ -51,7 +51,7 @@
 <div class="phone">
   <div class="ighead" id="uname"></div>
   <div class="prof"><div class="av" id="av"></div><div><div class="pname" id="pname"></div><div class="psub">23–30 Kasım planı</div></div></div>
-  <div class="vt"><div id="tg" class="on">▦ Profil ızgarası</div><div id="tf">☰ Akış</div></div>
+  <div class="vt"><div id="tg" class="on">▦ Profil ızgarası</div><div id="tf">☰ Akış</div><div id="ts">◯ Story</div></div>
   <div id="view"></div>
 </div>
 <script>
@@ -70,11 +70,13 @@ function head(){
   document.getElementById('accs').innerHTML=Object.keys(D).map(k=>`<button class="${k==acc?'on':''}" onclick="acc='${k}';mode='grid';draw()">@${k}</button>`).join('');
   const a=D[acc]; document.getElementById('uname').textContent=acc; document.getElementById('pname').textContent=a.name;
   document.getElementById('av').style.backgroundImage=`url(${a.logo})`;
-  document.getElementById('tg').className=mode=='grid'?'on':''; document.getElementById('tf').className=mode=='feed'?'on':'';
+  document.getElementById('tg').className=mode=='grid'?'on':''; document.getElementById('tf').className=mode=='feed'?'on':''; document.getElementById('ts').className=mode=='story'?'on':'';
 }
 function draw(){
   head(); const a=D[acc]; const ps=a.posts.slice().reverse(); const v=document.getElementById('view');
-  if(mode=='grid'){
+  if(mode=='story'){
+    v.innerHTML='<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px">'+a.stories.map(s=>`<div><img src="${s.img}${VQ}" style="width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;display:block"><div style="font-weight:700;font-size:13px;margin-top:6px">${s.day}</div><div style="font-size:12px;color:#737373">${esc(s.note)}</div></div>`).join('')+'</div>';
+  } else if(mode=='grid'){
     v.innerHTML='<div class="grid">'+ps.map((p,i)=>{const bg=p.kind=='reel'?p.cover:p.imgs[0];
       const ic=p.kind=='reel'?SVG.reel:(p.kind=='carousel'?SVG.car:'');
       return `<div class="tile" style="background-image:url('${bg}${VQ}')" onclick="mode='feed';draw();setTimeout(()=>document.getElementById('p${i}').scrollIntoView({behavior:'smooth'}),50)">${ic?`<span class="ic">${ic}</span>`:''}<span class="dt">${p.day}</span></div>`}).join('')+'</div>';
@@ -92,7 +94,7 @@ function go(b,dir){const el=b.parentNode.querySelector('.slides');el.scrollBy({l
 document.addEventListener('mousedown',e=>{const el=e.target.closest('.slides');if(!el)return;e.preventDefault();const x0=e.clientX,s0=el.scrollLeft;el.style.scrollSnapType='none';const mv=ev=>el.scrollLeft=s0-(ev.clientX-x0);const up=ev=>{document.removeEventListener('mousemove',mv);document.removeEventListener('mouseup',up);const w=el.clientWidth;let i=Math.round(s0/w)+(ev.clientX-x0<-40?1:ev.clientX-x0>40?-1:0);i=Math.max(0,Math.min(el.children.length-1,i));el.style.scrollSnapType='';el.scrollTo({left:i*w,behavior:'smooth'})};document.addEventListener('mousemove',mv);document.addEventListener('mouseup',up)});
 function dots(el){const n=el.children.length,i=Math.round(el.scrollLeft/el.clientWidth);const md=el.parentNode;const L=md.querySelector('.nav.l'),Rr=md.querySelector('.nav.r');if(L){L.style.display=i?'':'none';Rr.style.display=i<n-1?'':'none'}md.querySelector('.cnt').textContent=(i+1)+'/'+n;
   md.nextElementSibling.querySelectorAll('i').forEach((d,j)=>d.className=j==i?'on':'')}
-document.getElementById('tg').onclick=()=>{mode='grid';draw()}; document.getElementById('tf').onclick=()=>{mode='feed';draw()};
+document.getElementById('tg').onclick=()=>{mode='grid';draw()}; document.getElementById('tf').onclick=()=>{mode='feed';draw()}; document.getElementById('ts').onclick=()=>{mode='story';draw()};
 fetch('data.json?v='+Date.now()).then(r=>r.json()).then(j=>{D=j;draw()});
 </script>
 </body>

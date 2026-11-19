@@ -79,6 +79,28 @@
     "cap": "Land of beautiful horses.\n\nThat is one old reading of the name Cappadocia, and a ride through the valleys is still one of the best ways to see them.",
     "tags": "#Cappadocia #HorseRiding #Goreme #FairyChimneys #TurkeyTravel"
    }
+  ],
+  "stories": [
+   {
+    "day": "Sal 24",
+    "img": "story/Neopolis-Story-1-Anket.jpg",
+    "note": "Anket çıkartması ortadaki krem banda: Snow / Sun"
+   },
+   {
+    "day": "Sal 24, post çıkınca",
+    "img": "story/Neopolis-Story-3-Yeni-post.jpg",
+    "note": "Winter postunu story olarak paylaş butonuyla ekle ya da bu görseli at, üstüne \"post\" bağlantısı"
+   },
+   {
+    "day": "Per 26",
+    "img": "story/Neopolis-Story-2-Soru.jpg",
+    "note": "Soru çıkartması fotoğrafın ortasına: \"Ask us anything\""
+   },
+   {
+    "day": "Cmt 28",
+    "img": "story/Neopolis-Story-4-Misafir.jpg",
+    "note": "Misafir postuyla aynı gün; istersen konum çıkartması ekle"
+   }
   ]
  },
  "viajesdeturquia": {
@@ -149,6 +171,28 @@
     "cap": "Nuestros viajeros. Capadocia, con ellos.\n\nGracias por compartir estos días con nosotros.",
     "tags": "#Capadocia #NuestrosViajeros #Turquia #RecuerdosDeViaje"
    }
+  ],
+  "stories": [
+   {
+    "day": "Pzt 23",
+    "img": "story/Viajes-Story-2-Quiz.jpg",
+    "note": "Quiz çıkartması köprünün üstüne: 1 / 2 / 3 (doğru cevap: 2)"
+   },
+   {
+    "day": "Pzt 23, post çıkınca",
+    "img": "story/Viajes-Story-3-Nuevo-post.jpg",
+    "note": "Estambul postunu story olarak paylaş ya da bu görseli at"
+   },
+   {
+    "day": "Çar 25",
+    "img": "story/Viajes-Story-1-Encuesta.jpg",
+    "note": "Anket çıkartması kemerlerin altına: Globo / Caballo"
+   },
+   {
+    "day": "Paz 29",
+    "img": "story/Viajes-Story-4-Viajeros.jpg",
+    "note": "Misafir postuyla aynı gün"
+   }
   ]
  },
  "ephesustoursturkey": {
@@ -201,6 +245,28 @@
     "cover": "29-Kasim-Paz-Ephesus-Reel-Pamukkale-kapak.jpg",
     "cap": "Not snow. Not ice. Pamukkale.\n\nWhite travertine terraces and the ancient city of Hierapolis right above them.",
     "tags": "#Pamukkale #Hierapolis #Travertine #TurkeyTravel #Denizli"
+   }
+  ],
+  "stories": [
+   {
+    "day": "Sal 24",
+    "img": "story/Ephesus-Story-1-Quiz.jpg",
+    "note": "Quiz çıkartması başlığın altına: 900 / 1,900 / 2,900 years (doğru: yaklaşık 1,900; MS 117 civarı tamamlandı)"
+   },
+   {
+    "day": "Per 26",
+    "img": "story/Ephesus-Story-2-Anket.jpg",
+    "note": "Anket çıkartması çizginin üstüne: Ephesus / Pamukkale"
+   },
+   {
+    "day": "Cum 27",
+    "img": "story/Ephesus-Story-3-Soru.jpg",
+    "note": "Soru çıkartması alt metnin altına"
+   },
+   {
+    "day": "Cmt 28",
+    "img": "story/Ephesus-Story-4-Misafir.jpg",
+    "note": "Misafir postuyla aynı gün"
    }
   ]
  }
