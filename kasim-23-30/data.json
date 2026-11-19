@@ -43,7 +43,7 @@
      "N2c-vapur.jpg",
      "N2d-galata.jpg"
     ],
-    "cap": "First time in Istanbul? A few small things locals wish you knew.\n\nBreakfast happens on the move: grab a simit. The best Bosphorus view costs one ferry ticket. And look up, then walk up to Galata.\n\nSend this to someone going soon.",
+    "cap": "First time in Istanbul? A few small things locals wish you knew.\n\nBreakfast happens on the move: grab a simit. Sit by the Bosphorus, with Europe on one shore and Asia on the other. And look up, then walk up to Galata.\n\nSend this to someone going soon.",
     "tags": "#Istanbul #IstanbulTips #FirstTimeInIstanbul #TurkeyTravel #Simit"
    },
    {
@@ -57,14 +57,27 @@
     "tags": "#Cappadocia #Pasabag #OurGuests #TurkeyTravel #TravelMemories"
    },
    {
+    "day": "Cmt 28 Kas",
+    "time": "18:00",
+    "kind": "carousel",
+    "imgs": [
+     "N5a-Neopolis-Winter-EN-cover.jpg",
+     "N5b-balloons.jpg",
+     "N5c-erciyes.jpg",
+     "N5d-warm.jpg"
+    ],
+    "cap": "Cappadocia in winter.\n\nBalloons still fly over the snow when the wind allows. Snow-capped Erciyes sits in the background of almost every photo. And dress warm: winter mornings are freezing.",
+    "tags": "#Cappadocia #CappadociaWinter #Erciyes #HotAirBalloon #TurkeyTravel"
+   },
+   {
     "day": "Paz 29 Kas",
     "time": "12:00",
     "kind": "single",
     "imgs": [
-     "N4-Neopolis-Underground.jpg"
+     "N4-Neopolis-Horses.jpg"
     ],
-    "cap": "Below.\n\nCappadocia goes deeper than you think. Under the fairy chimneys, whole cities were carved into the rock, with tunnels, stairways and rooms that stay cool all year.",
-    "tags": "#Cappadocia #UndergroundCity #Derinkuyu #History #TurkeyTravel"
+    "cap": "Land of beautiful horses.\n\nThat is one old reading of the name Cappadocia, and a ride through the valleys is still one of the best ways to see them.",
+    "tags": "#Cappadocia #HorseRiding #Goreme #FairyChimneys #TurkeyTravel"
    }
   ]
  },
@@ -145,13 +158,9 @@
    {
     "day": "Pzt 23 Kas",
     "time": "12:00",
-    "kind": "carousel",
-    "imgs": [
-     "D3-Ephesus-Know-before.jpg",
-     "E1b-timing.jpg",
-     "E1c-shoes.jpg",
-     "E1d-shade.jpg"
-    ],
+    "kind": "reel",
+    "video": "23-Kasim-Pzt-Ephesus-Reel-Know-before.mp4",
+    "cover": "23-Kasim-Pzt-Ephesus-Reel-Know-before-kapak.jpg",
     "cap": "Ephesus: know before you go.\n\nArrive when the gates open, before the heat. Wear shoes with grip, the marble is polished by two thousand years of feet. And bring water and a hat, there is very little shade.\n\nSave this for your visit.",
     "tags": "#Ephesus #Efes #LibraryOfCelsus #TurkeyTravel #TravelTips"
    },
