@@ -7,31 +7,32 @@
     "day": "Pzt 23 Kas",
     "time": "19:00",
     "kind": "reel",
-    "video": "23-Kasim-Pzt-Neopolis-Reel-Kar.mp4",
-    "cover": "23-Kasim-Pzt-Neopolis-Reel-Kar-kapak.jpg",
-    "cap": "Cappadocia, under snow.\n\nThe valleys go quiet, the balloons still rise when the wind allows, and every rooftop in Goreme turns white for a few mornings.\n\nWould you see it in winter?",
-    "tags": "#Cappadocia #CappadociaWinter #Goreme #HotAirBalloon #TurkeyTravel"
+    "video": "23-Kasim-Pzt-Neopolis-Reel-Turquoise.mp4",
+    "cover": "23-Kasim-Pzt-Neopolis-Reel-Turquoise-kapak.jpg",
+    "cap": "This is Turkey too.\n\nTurquoise bays, sunken ruins at Kekova and a coastline made for slow days on the water. The Turquoise Coast, from Kas to Antalya.",
+    "tags": "#TurquoiseCoast #Kas #Kekova #Antalya #TurkeyTravel"
    },
    {
     "day": "Sal 24 Kas",
     "time": "13:00",
     "kind": "carousel",
     "imgs": [
-     "D1a-Neopolis-Winter-cover.jpg",
-     "D1b-Neopolis-Winter-snow.jpg",
-     "D1c-Neopolis-Winter-tea.jpg"
+     "N3a-neopolis-Beyond-cover.jpg",
+     "N3b-neopolis-Safranbolu.jpg",
+     "N3c-neopolis-Kas.jpg",
+     "N3d-neopolis-Gallipoli.jpg"
     ],
-    "cap": "Winter in Cappadocia: a short guide before you go.\n\nDress for the sunrise, not the afternoon. The snow rarely stays past noon, so go out early. And after the balloons, find a warm cave cafe for a long tea.\n\nSave this for your winter trip.",
-    "tags": "#Cappadocia #WinterTravel #Goreme #TurkeyTravel #TravelTips"
+    "cap": "Turkey, beyond Istanbul.\n\nSafranbolu and its Ottoman timber houses. Kas, with turquoise bays and Kekova next door. Gallipoli, quiet memorials above the Dardanelles.\n\nWhich one is on your list?",
+    "tags": "#Turkey #Safranbolu #Kas #Gallipoli #TurkeyTravel"
    },
    {
     "day": "Per 26 Kas",
     "time": "19:00",
     "kind": "reel",
-    "video": "26-Kasim-Per-Neopolis-Reel-Istanbul.mp4",
-    "cover": "26-Kasim-Per-Neopolis-Reel-Istanbul-kapak.jpg",
-    "cap": "One city. Two continents.\n\nFerries, towers and a skyline that changes with the light. Istanbul never looks the same twice.",
-    "tags": "#Istanbul #Bosphorus #GalataTower #TurkeyTravel #VisitIstanbul"
+    "video": "26-Kasim-Per-Neopolis-Reel-Greece.mp4",
+    "cover": "26-Kasim-Per-Neopolis-Reel-Greece-kapak.jpg",
+    "cap": "Across the Aegean: Greece.\n\nThe Acropolis above Athens, monasteries on the rocks of Meteora and the white villages of Santorini.",
+    "tags": "#Greece #Athens #Meteora #Santorini #GreeceTravel"
    },
    {
     "day": "Cum 27 Kas",
@@ -52,10 +53,10 @@
     "time": "12:00",
     "kind": "single",
     "imgs": [
-     "N3-Neopolis-Guest-gallery.jpg"
+     "N4-Neopolis-Konya.jpg"
     ],
-    "cap": "Pasabag Valley, through our guests' eyes.\n\nShot on a phone, kept forever. Thank you for travelling with us this autumn.",
-    "tags": "#Cappadocia #Pasabag #OurGuests #TurkeyTravel #TravelMemories"
+    "cap": "Konya.\n\nEvery December, the Seb-i Arus ceremonies honor Rumi, and the whirling of the dervishes fills the city with quiet.",
+    "tags": "#Konya #Rumi #Mevlana #WhirlingDervishes #TurkeyTravel"
    },
    {
     "day": "Cmt 28 Kas",
@@ -75,10 +76,10 @@
     "time": "12:00",
     "kind": "single",
     "imgs": [
-     "N4-Neopolis-Horses.jpg"
+     "N5-Neopolis-Nemrut.jpg"
     ],
-    "cap": "Land of beautiful horses.\n\nThat is one old reading of the name Cappadocia, and a ride through the valleys is still one of the best ways to see them.",
-    "tags": "#Cappadocia #HorseRiding #Goreme #FairyChimneys #TurkeyTravel"
+    "cap": "Giants at the summit.\n\nOn Mount Nemrut, stone heads of kings and gods have watched the sunrise for more than two thousand years.",
+    "tags": "#MountNemrut #Nemrut #UNESCO #EasternTurkey #TurkeyTravel"
    }
   ],
   "stories": [
@@ -90,7 +91,7 @@
    {
     "day": "Sal 24, post çıkınca",
     "img": "story/Neopolis-Story-3-Yeni-post.jpg",
-    "note": "Winter postunu story olarak paylaş butonuyla ekle ya da bu görseli at, üstüne \"post\" bağlantısı"
+    "note": "Turkey beyond Istanbul postunu story olarak paylaş ya da bu görseli at"
    },
    {
     "day": "Per 26",
@@ -126,29 +127,33 @@
     "day": "Sal 24 Kas",
     "time": "20:30",
     "kind": "reel",
-    "video": "24-Kasim-Sal-Viajes-Reel-Nuestros-viajeros.mp4",
-    "cover": "24-Kasim-Sal-Viajes-Reel-Nuestros-viajeros-kapak.jpg",
-    "cap": "No son modelos. Son nuestros viajeros.\n\nGracias a todos los que recorrieron Capadocia con nosotros esta temporada.",
-    "tags": "#Capadocia #NuestrosViajeros #Turquia #ViajarATurquia #Viajes"
+    "video": "24-Kasim-Sal-Viajes-Reel-Efeso-viajeros.mp4",
+    "cover": "24-Kasim-Sal-Viajes-Reel-Efeso-viajeros-kapak.jpg",
+    "cap": "No son modelos. Son nuestros viajeros.\n\nGracias a todos los que caminaron Éfeso con nosotros esta temporada.",
+    "tags": "#Efeso #NuestrosViajeros #Turquia #ViajarATurquia #Viajes"
    },
    {
     "day": "Car 25 Kas",
     "time": "13:00",
     "kind": "single",
     "imgs": [
-     "V2-Viajes-Amanecer.jpg"
+     "V2-Viajes-Mardin.jpg"
     ],
-    "cap": "Antes del desayuno.\n\nEn Capadocia el día empieza con los globos. Vale la pena poner el despertador.",
-    "tags": "#Capadocia #Globos #Amanecer #Turquia #ViajarATurquia"
+    "cap": "Mardin, ciudad de piedra.\n\nCasas de piedra color miel que miran a la llanura de Mesopotamia, en el sureste de Turquía.",
+    "tags": "#Mardin #Turquia #Mesopotamia #ViajarATurquia"
    },
    {
     "day": "Cum 27 Kas",
-    "time": "20:30",
-    "kind": "reel",
-    "video": "27-Kasim-Cum-Viajes-Reel-Capadocia.mp4",
-    "cover": "27-Kasim-Cum-Viajes-Reel-Capadocia-kapak.jpg",
-    "cap": "Despertador a las 5. Vale cada minuto.",
-    "tags": "#Capadocia #Globos #Turquia #Goreme #ViajarATurquia"
+    "time": "13:00",
+    "kind": "carousel",
+    "imgs": [
+     "V3a-viajes-Beyond-cover.jpg",
+     "V3b-viajes-Safranbolu.jpg",
+     "V3c-viajes-Kas.jpg",
+     "V3d-viajes-Galípoli.jpg"
+    ],
+    "cap": "Turquía, más allá de Estambul.\n\nSafranbolu y sus casas otomanas de madera. Kas, con calas turquesas y Kekova al lado. Galípoli, memoriales serenos sobre los Dardanelos.\n\n¿Cuál está en tu lista?",
+    "tags": "#Turquia #Safranbolu #Kas #Galipoli #ViajarATurquia"
    },
    {
     "day": "Cmt 28 Kas",
@@ -168,10 +173,10 @@
     "time": "13:00",
     "kind": "single",
     "imgs": [
-     "V4-Viajes-Guest.jpg"
+     "V4-Viajes-Sumela.jpg"
     ],
-    "cap": "Nuestros viajeros. Capadocia, con ellos.\n\nGracias por compartir estos días con nosotros.",
-    "tags": "#Capadocia #NuestrosViajeros #Turquia #RecuerdosDeViaje"
+    "cap": "Sumela.\n\nUn monasterio colgado del acantilado, entre los bosques y la niebla de las montañas de Trabzon, junto al Mar Negro.",
+    "tags": "#Sumela #Trabzon #MarNegro #Turquia #ViajarATurquia"
    }
   ],
   "stories": [
