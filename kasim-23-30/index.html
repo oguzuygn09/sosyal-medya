@@ -31,6 +31,8 @@
   .slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
   .slides::-webkit-scrollbar{display:none}
   .slides img{width:100%;flex:none;scroll-snap-align:start;display:block;aspect-ratio:4/5;object-fit:cover}
+  .nav{position:absolute;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;border:0;background:rgba(255,255,255,.85);font-size:18px;line-height:30px;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.3);padding:0}
+  .nav.l{left:10px}.nav.r{right:10px}
   .cnt{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.7);color:#fff;font-size:12px;padding:3px 9px;border-radius:12px}
   .dots{display:flex;justify-content:center;gap:4px;padding:8px 0 0}
   .dots i{width:6px;height:6px;border-radius:50%;background:#c7c7c7}.dots i.on{background:#0095f6}
@@ -78,17 +80,19 @@ function draw(){
   } else {
     v.innerHTML=ps.map((p,i)=>{let m;
       if(p.kind=='reel') m=`<div class="media"><video src="${p.video}" poster="${p.cover}" autoplay muted loop playsinline></video><div class="snd" onclick="const vv=this.previousElementSibling;vv.muted=!vv.muted;this.textContent=vv.muted?'🔇':'🔊'">🔇</div></div>`;
-      else m=`<div class="media"><div class="slides" onscroll="dots(this)">${p.imgs.map(s=>`<img src="${s}" loading="lazy">`).join('')}</div>${p.imgs.length>1?`<span class="cnt">1/${p.imgs.length}</span>`:''}</div>`+(p.imgs.length>1?`<div class="dots">${p.imgs.map((_,j)=>`<i class="${j?'':'on'}"></i>`).join('')}</div>`:'');
+      else m=`<div class="media"><div class="slides" onscroll="dots(this)">${p.imgs.map(s=>`<img src="${s}" loading="lazy">`).join('')}</div>${p.imgs.length>1?`<span class="cnt">1/${p.imgs.length}</span><button class="nav l" style="display:none" onclick="go(this,-1)">‹</button><button class="nav r" onclick="go(this,1)">›</button>`:''}</div>`+(p.imgs.length>1?`<div class="dots">${p.imgs.map((_,j)=>`<i class="${j?'':'on'}"></i>`).join('')}</div>`:'');
       return `<div class="post" id="p${i}"><div class="ph"><div class="av sm" style="background-image:url(${a.logo})"></div><b>${acc}</b><span class="sch">${p.day} · ${p.time}</span></div>${m}
       <div class="act">${SVG.heart}${SVG.com}${SVG.shr}<span class="sv">${SVG.sav}</span></div>
       <div class="cap"><b>${acc}</b> ${tagify(p.cap)}\n\n${tagify(p.tags)}</div>
       <div class="note">${p.kind=='reel'?'Reels · Edits uygulamasından trend sesle paylaşılacak (20 dk önce hatırlatma)':'Otomatik paylaşım · Windsor'}</div></div>`}).join('');
   }
 }
-function dots(el){const n=el.children.length,i=Math.round(el.scrollLeft/el.clientWidth);const md=el.parentNode;md.querySelector('.cnt').textContent=(i+1)+'/'+n;
+function go(b,dir){const el=b.parentNode.querySelector('.slides');el.scrollBy({left:dir*el.clientWidth,behavior:'smooth'})}
+document.addEventListener('mousedown',e=>{const el=e.target.closest('.slides');if(!el)return;e.preventDefault();const x0=e.clientX,s0=el.scrollLeft;el.style.scrollSnapType='none';const mv=ev=>el.scrollLeft=s0-(ev.clientX-x0);const up=ev=>{document.removeEventListener('mousemove',mv);document.removeEventListener('mouseup',up);const w=el.clientWidth;let i=Math.round(s0/w)+(ev.clientX-x0<-40?1:ev.clientX-x0>40?-1:0);i=Math.max(0,Math.min(el.children.length-1,i));el.style.scrollSnapType='';el.scrollTo({left:i*w,behavior:'smooth'})};document.addEventListener('mousemove',mv);document.addEventListener('mouseup',up)});
+function dots(el){const n=el.children.length,i=Math.round(el.scrollLeft/el.clientWidth);const md=el.parentNode;const L=md.querySelector('.nav.l'),Rr=md.querySelector('.nav.r');if(L){L.style.display=i?'':'none';Rr.style.display=i<n-1?'':'none'}md.querySelector('.cnt').textContent=(i+1)+'/'+n;
   md.nextElementSibling.querySelectorAll('i').forEach((d,j)=>d.className=j==i?'on':'')}
 document.getElementById('tg').onclick=()=>{mode='grid';draw()}; document.getElementById('tf').onclick=()=>{mode='feed';draw()};
-fetch('data.json').then(r=>r.json()).then(j=>{D=j;draw()});
+fetch('data.json?v='+Date.now()).then(r=>r.json()).then(j=>{D=j;draw()});
 </script>
 </body>
 </html>
