@@ -62,6 +62,7 @@ const SVG={
  com:'<svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.7 16.5A9 9 0 1 0 17 20.3L21 21z"/></svg>',
  shr:'<svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M22 3 9.2 10.1M22 3l-7 18-4-8-8-4z"/></svg>',
  sav:'<svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M19 21l-7-6-7 6V3h14z"/></svg>'};
+const VQ='?v='+Date.now();
 let D,acc='neopolistravel',mode='grid';
 const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 const tagify=s=>esc(s).replace(/(^|\s)(#\w+)/g,'$1<span class="tg">$2</span>');
@@ -76,11 +77,11 @@ function draw(){
   if(mode=='grid'){
     v.innerHTML='<div class="grid">'+ps.map((p,i)=>{const bg=p.kind=='reel'?p.cover:p.imgs[0];
       const ic=p.kind=='reel'?SVG.reel:(p.kind=='carousel'?SVG.car:'');
-      return `<div class="tile" style="background-image:url('${bg}')" onclick="mode='feed';draw();setTimeout(()=>document.getElementById('p${i}').scrollIntoView({behavior:'smooth'}),50)">${ic?`<span class="ic">${ic}</span>`:''}<span class="dt">${p.day}</span></div>`}).join('')+'</div>';
+      return `<div class="tile" style="background-image:url('${bg}${VQ}')" onclick="mode='feed';draw();setTimeout(()=>document.getElementById('p${i}').scrollIntoView({behavior:'smooth'}),50)">${ic?`<span class="ic">${ic}</span>`:''}<span class="dt">${p.day}</span></div>`}).join('')+'</div>';
   } else {
     v.innerHTML=ps.map((p,i)=>{let m;
-      if(p.kind=='reel') m=`<div class="media"><video src="${p.video}" poster="${p.cover}" autoplay muted loop playsinline></video><div class="snd" onclick="const vv=this.previousElementSibling;vv.muted=!vv.muted;this.textContent=vv.muted?'🔇':'🔊'">🔇</div></div>`;
-      else m=`<div class="media"><div class="slides" onscroll="dots(this)">${p.imgs.map(s=>`<img src="${s}" loading="lazy">`).join('')}</div>${p.imgs.length>1?`<span class="cnt">1/${p.imgs.length}</span><button class="nav l" style="display:none" onclick="go(this,-1)">‹</button><button class="nav r" onclick="go(this,1)">›</button>`:''}</div>`+(p.imgs.length>1?`<div class="dots">${p.imgs.map((_,j)=>`<i class="${j?'':'on'}"></i>`).join('')}</div>`:'');
+      if(p.kind=='reel') m=`<div class="media"><video src="${p.video}${VQ}" poster="${p.cover}${VQ}" autoplay muted loop playsinline></video><div class="snd" onclick="const vv=this.previousElementSibling;vv.muted=!vv.muted;this.textContent=vv.muted?'🔇':'🔊'">🔇</div></div>`;
+      else m=`<div class="media"><div class="slides" onscroll="dots(this)">${p.imgs.map(s=>`<img src="${s}${VQ}" loading="lazy">`).join('')}</div>${p.imgs.length>1?`<span class="cnt">1/${p.imgs.length}</span><button class="nav l" style="display:none" onclick="go(this,-1)">‹</button><button class="nav r" onclick="go(this,1)">›</button>`:''}</div>`+(p.imgs.length>1?`<div class="dots">${p.imgs.map((_,j)=>`<i class="${j?'':'on'}"></i>`).join('')}</div>`:'');
       return `<div class="post" id="p${i}"><div class="ph"><div class="av sm" style="background-image:url(${a.logo})"></div><b>${acc}</b><span class="sch">${p.day} · ${p.time}</span></div>${m}
       <div class="act">${SVG.heart}${SVG.com}${SVG.shr}<span class="sv">${SVG.sav}</span></div>
       <div class="cap"><b>${acc}</b> ${tagify(p.cap)}\n\n${tagify(p.tags)}</div>
